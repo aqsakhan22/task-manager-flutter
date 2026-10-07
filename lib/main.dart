@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 
 void main() {
-  runApp(const TaskManagerApp());
+  runApp(
+    const ProviderScope(child: TaskManagerApp())
+    );
 }
 
 class TaskManagerApp extends StatelessWidget {
